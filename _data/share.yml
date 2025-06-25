@@ -24,12 +24,10 @@ platforms:
   #   icon: "fab fa-weibo"
   #   link: "https://service.weibo.com/share/share.php?title=TITLE&url=URL"
   #
-  - type: Mathstodon
-    icon: "fa-brands fa-mastodon"
-    # See: https://github.com/justinribeiro/share-to-mastodon#properties
-    instances:
-      - label: mathstodon.xyz
-        link: "https://mathstodon.xyz/"
+  # - type: Mastodon
+  #   icon: "fa-brands fa-mastodon"
+  #   # See: https://github.com/justinribeiro/share-to-mastodon#properties
+  #   instances:
   #     - label: mastodon.social
   #       link: "https://mastodon.social/"
   #     - label: mastodon.online
