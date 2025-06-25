@@ -28,11 +28,15 @@ url: "https://jpsaha.github.io"
 github:
   username: jpsaha # github_username # change to your GitHub username
 
+linkedin:
+  username: jpsaha
+
+mathstodon:
+  username: jpsaha
+
 twitter:
   username: jpsaha24 # twitter_username # change to your Twitter username
 
-linkedin:
-  username: jpsaha
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer

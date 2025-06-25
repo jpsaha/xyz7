@@ -57,13 +57,17 @@
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
-        {% when 'twitter' %}
-          {%- capture url -%}
-            https://{{ entry.type }}.com/{{ site[entry.type].username }}
-          {%- endcapture -%}
         {% when 'linkedin' %}
           {%- capture url -%}
             https://{{ entry.type }}.com/in/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'mathstodon' %}
+          {%- capture url -%}
+            https://{{ entry.type }}.xyz/@{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'twitter' %}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}
