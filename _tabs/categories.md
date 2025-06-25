@@ -5,5 +5,4 @@ order: 4
 math: true
 ---
 
-> **Click at the links below for notes.**
-{: .prompt-tip }
+**Click at the links below for notes.**
