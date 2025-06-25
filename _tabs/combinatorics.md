@@ -5,4 +5,8 @@ order: 7
 math: true
 ---
 
+
+> Click at the links below for notes.
+{: .prompt-tip }
+
 - [Pigeonhole principle]({{ site.baseurl }}/posts/Pigeon/)
