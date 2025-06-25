@@ -1,6 +1,6 @@
 ---
 title: Handouts
 icon: fas fa-pen
-order: 2
+order: 30
 math: true
 ---
