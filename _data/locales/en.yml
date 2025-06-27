@@ -72,7 +72,7 @@ df:
 categories:
   category_measure:
     singular: category
-    plural: categoriaes
+    plural: categories
   post_measure:
     singular: post
     plural: posts
