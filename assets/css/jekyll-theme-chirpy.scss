@@ -9,10 +9,8 @@
 ';
 
 /* append your custom style below */
-
-<!-- Add this CSS to your stylesheet (e.g., styles.css) -->
 <style>
-.blockquote-def {
+.blockquote-custom {
   border-left: 4px solid #f79eb2;
   background: #fff6f8;
   color: #2d2d2d;
@@ -21,17 +19,17 @@
   border-radius: 0.5em;
   box-shadow: 0 2px 8px rgba(247, 158, 178, 0.08);
 }
-.blockquote-def .def-title {
+.blockquote-custom .bq-title {
   color: #f2577b;
   font-weight: bold;
   font-size: 1.1em;
 }
-.blockquote-def .def-context {
+.blockquote-custom .bq-context {
   color: #666;
   font-size: 0.95em;
   margin-left: 0.5em;
 }
-.blockquote-def .def-term {
+.blockquote-custom .bq-term {
   color: #f2577b;
   font-style: italic;
 }
