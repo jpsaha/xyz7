@@ -1,4 +1,6 @@
-<div class="problem-block">
+{% assign myid = include.id | default: include.title | slugify | default: "problem-" | append: page.url | slugify | append: "-" | append: forloop.index | slugify %}
+<div class="problem-block" id="{{ myid }}">
   <span class="block-title"></span>
+  <a class="anchor-link" href="#{{ myid }}" title="Link to this problem">🔗</a>
   {{ include.content | markdownify }}
 </div>
