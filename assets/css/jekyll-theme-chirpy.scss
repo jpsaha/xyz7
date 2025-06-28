@@ -9,7 +9,8 @@
 ';
 
 /* append your custom style below */
-.blockquote-custom {
+/* <style> */
+.blockquote-def {
   border-left: 4px solid #f79eb2;
   background: #fff6f8;
   color: #2d2d2d;
@@ -18,17 +19,18 @@
   border-radius: 0.5em;
   box-shadow: 0 2px 8px rgba(247, 158, 178, 0.08);
 }
-.blockquote-custom .bq-title {
+.blockquote-def .def-title {
   color: #f2577b;
   font-weight: bold;
   font-size: 1.1em;
 }
-.blockquote-custom .bq-context {
+.blockquote-def .def-context {
   color: #666;
   font-size: 0.95em;
   margin-left: 0.5em;
 }
-.blockquote-custom .bq-term {
+.blockquote-def .def-term {
   color: #f2577b;
   font-style: italic;
 }
+/* </style> */
