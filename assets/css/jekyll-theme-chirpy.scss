@@ -96,23 +96,11 @@
   box-shadow: 0 2px 8px rgba(172, 149, 252, 0.08);
 }
 
-
-.proof-block {
-  border-left: 4px solid #52a88e;
-  background: #f4fbf8;
-  color: #23493a;
-  padding: 1em 1.5em;
-  margin: 1.5em 0;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 8px rgba(82, 168, 142, 0.07);
+.math-blocks {
+  counter-reset: theorem definition proof;
 }
-.proof-block .block-title {
-  color: #2e7b67;
-  font-weight: bold;
-  font-size: 1.08em;
-}
-
 .theorem-block {
+  counter-increment: theorem;
   border-left: 4px solid #ac95fc;
   background: #f7f5ff;
   color: #2d2d2d;
@@ -120,19 +108,22 @@
   margin: 1.5em 0;
   border-radius: 0.5em;
   box-shadow: 0 2px 8px rgba(172, 149, 252, 0.08);
+  position: relative;
+}
+.theorem-block .block-title::before {
+  content: "Theorem " counter(theorem) ". ";
+  color: #6c49fb;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 .theorem-block .block-title {
   color: #6c49fb;
   font-weight: bold;
   font-size: 1.1em;
 }
-.theorem-block .block-context {
-  color: #666;
-  font-size: 0.95em;
-  margin-left: 0.5em;
-}
 
 .definition-block {
+  counter-increment: definition;
   border-left: 4px solid #f79eb2;
   background: #fff6f8;
   color: #2d2d2d;
@@ -140,19 +131,39 @@
   margin: 1.5em 0;
   border-radius: 0.5em;
   box-shadow: 0 2px 8px rgba(247, 158, 178, 0.08);
+  position: relative;
+}
+.definition-block .block-title::before {
+  content: "Definition " counter(definition) ". ";
+  color: #f2577b;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 .definition-block .block-title {
   color: #f2577b;
   font-weight: bold;
   font-size: 1.1em;
 }
-.definition-block .block-context {
-  color: #666;
-  font-size: 0.95em;
-  margin-left: 0.5em;
-}
-.definition-block .block-term {
-  color: #f2577b;
-  font-style: italic;
-}
 
+.proof-block {
+  counter-increment: proof;
+  border-left: 4px solid #52a88e;
+  background: #f4fbf8;
+  color: #23493a;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(82, 168, 142, 0.07);
+  position: relative;
+}
+.proof-block .block-title::before {
+  content: "Proof " counter(proof) ". ";
+  color: #2e7b67;
+  font-weight: bold;
+  font-size: 1.08em;
+}
+.proof-block .block-title {
+  color: #2e7b67;
+  font-weight: bold;
+  font-size: 1.08em;
+}
