@@ -1,0 +1,36 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+<style>
+.blockquote-custom {
+  border-left: 4px solid #f79eb2;
+  background: #fff6f8;
+  color: #2d2d2d;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(247, 158, 178, 0.08);
+}
+.blockquote-custom .bq-title {
+  color: #f2577b;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.blockquote-custom .bq-context {
+  color: #666;
+  font-size: 0.95em;
+  margin-left: 0.5em;
+}
+.blockquote-custom .bq-term {
+  color: #f2577b;
+  font-style: italic;
+}
+</style>
