@@ -580,7 +580,7 @@
 
 
 .math-blocks {
-  counter-reset: definition example lemma proposition theorem corollary hint walkthrough proof remark problem solution;
+  counter-reset: definition example lemma claim proposition theorem corollary hint walkthrough proof remark problem solution exercise;
 }
 
 /* Elegant color palette inspired by pastel, muted, and modern tones */
@@ -839,6 +839,7 @@
 .definition-block .anchor-link,
 .example-block .anchor-link,
 .lemma-block .anchor-link,
+.claim-block .anchor-link,
 .proposition-block .anchor-link,
 .theorem-block .anchor-link,
 .corollary-block .anchor-link,
@@ -847,7 +848,8 @@
 .proof-block .anchor-link,
 .remark-block .anchor-link,
 .problem-block .anchor-link,
-.solution-block .anchor-link {
+.solution-block .anchor-link,
+.exercise-block .anchor-link {
   float: right;
   font-size: 0.95em;
   color: #bbb;
@@ -861,6 +863,7 @@
 .definition-block:hover .anchor-link,
 .example-block:hover .anchor-link,
 .lemma-block:hover .anchor-link,
+.claim-block:hover .anchor-link,
 .proposition-block:hover .anchor-link,
 .theorem-block:hover .anchor-link,
 .corollary-block:hover .anchor-link,
@@ -869,7 +872,8 @@
 .proof-block:hover .anchor-link,
 .remark-block:hover .anchor-link,
 .problem-block:hover .anchor-link,
-.solution-block:hover .anchor-link {
+.solution-block:hover .anchor-link,
+.exercise-block:hover .anchor-link {
   opacity: 1;
   color: #5ab9ea;
 }
