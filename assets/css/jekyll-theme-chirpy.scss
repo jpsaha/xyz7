@@ -801,6 +801,23 @@
   font-size: 1.12em;
 }
 
+.exercise-block {
+  counter-increment: exercise;
+  border-left: 5px solid #f6c28b;
+  background: #fffaf4;
+  color: #965c25;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(246,194,139,0.09);
+}
+.exercise-block .block-title::before {
+  content: "Exercise " counter(exercise) ". ";
+  color: #e7952a;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
 /* Anchor Link Icon for all math blocks */
 .definition-block .anchor-link,
 .example-block .anchor-link,
