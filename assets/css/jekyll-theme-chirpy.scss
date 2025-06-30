@@ -767,42 +767,6 @@
 
 .problem-block {
   counter-increment: problem;
-  border-left: 5px solid #ff7f51;
-  background: #fff4f0;
-  color: #8d3e23;
-  padding: 1em 1.5em;
-  margin: 1.5em 0;
-  border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(255,127,81,0.07);
-  position: relative;
-}
-.problem-block .block-title::before {
-  content: "Problem " counter(problem) ". ";
-  color: #ff7f51;
-  font-weight: bold;
-  font-size: 1.12em;
-}
-
-.solution-block {
-  counter-increment: solution;
-  border-left: 5px solid #4ecdc4;
-  background: #e7fcfa;
-  color: #1d746a;
-  padding: 1em 1.5em;
-  margin: 1.5em 0;
-  border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(78,205,196,0.07);
-  position: relative;
-}
-.solution-block .block-title::before {
-  content: "Solution " counter(solution) ". ";
-  color: #4ecdc4;
-  font-weight: bold;
-  font-size: 1.12em;
-}
-
-.exercise-block {
-  counter-increment: exercise;
   border-left: 5px solid #763857;
   background: #f5ebf1;
   color: #3f2131;
@@ -812,9 +776,45 @@
   box-shadow: 0 3px 12px rgba(118,56,87,0.07);
   position: relative;
 }
+.problem-block .block-title::before {
+  content: "Problem " counter(problem) ". ";
+  color: #763857;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.solution-block {
+  counter-increment: solution;
+  border-left: 5px solid #2e7d32;
+  background: #e8f5e9;
+  color: #174825;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(46,125,50,0.08);
+  position: relative;
+}
+.solution-block .block-title::before {
+  content: "Solution " counter(solution) ". ";
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.exercise-block {
+  counter-increment: exercise;
+  border-left: 5px solid #00897b;
+  background: #e0f2f1;
+  color: #1a4844;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(0,137,123,0.08);
+  position: relative;
+}
 .exercise-block .block-title::before {
   content: "Exercise " counter(exercise) ". ";
-  color: #763857;
+  color: #00897b;
   font-weight: bold;
   font-size: 1.12em;
 }
