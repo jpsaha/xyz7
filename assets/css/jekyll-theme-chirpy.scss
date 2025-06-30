@@ -583,239 +583,238 @@
   counter-reset: definition example lemma claim proposition theorem hint walkthrough proof remark problem solution exercise;
 }
 
-/* Each block type has a distinct accent color and a coordinated light background.
-   Colors are chosen for clarity, elegance, and accessibility. */
+/* Distinct, elegant colors for each block type */
 
 .definition-block {
   counter-increment: definition;
-  border-left: 5px solid #1e88e5;
-  background: #e3f2fd;
-  color: #17426b;
+  border-left: 5px solid #0072b5;
+  background: #e3f1fa;
+  color: #1a3556;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(30,136,229,0.08);
+  box-shadow: 0 3px 12px rgba(0,114,181,0.07);
   position: relative;
 }
 .definition-block .block-title::before {
   content: "Definition " counter(definition) ". ";
-  color: #1e88e5;
+  color: #0072b5;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .example-block {
   counter-increment: example;
-  border-left: 5px solid #43a047;
-  background: #e8f5e9;
-  color: #215732;
+  border-left: 5px solid #43aa8b;
+  background: #e6f7f1;
+  color: #265a4b;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(67,160,71,0.08);
+  box-shadow: 0 3px 12px rgba(67,170,139,0.07);
   position: relative;
 }
 .example-block .block-title::before {
   content: "Example " counter(example) ". ";
-  color: #43a047;
+  color: #43aa8b;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .lemma-block {
   counter-increment: lemma;
-  border-left: 5px solid #6d4c41;
-  background: #efebe9;
-  color: #3e2723;
+  border-left: 5px solid #845ec2;
+  background: #f1edfa;
+  color: #392b5f;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(109,76,65,0.08);
+  box-shadow: 0 3px 12px rgba(132,94,194,0.07);
   position: relative;
 }
 .lemma-block .block-title::before {
   content: "Lemma " counter(lemma) ". ";
-  color: #6d4c41;
+  color: #845ec2;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .claim-block {
   counter-increment: claim;
-  border-left: 5px solid #fbc02d;
-  background: #fffde7;
-  color: #8d6e19;
+  border-left: 5px solid #f6ae2d;
+  background: #fef7e3;
+  color: #8b6b17;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(251,192,45,0.08);
+  box-shadow: 0 3px 12px rgba(246,174,45,0.07);
   position: relative;
 }
 .claim-block .block-title::before {
   content: "Claim " counter(claim) ". ";
-  color: #fbc02d;
+  color: #f6ae2d;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .proposition-block {
   counter-increment: proposition;
-  border-left: 5px solid #ab47bc;
-  background: #f3e5f5;
-  color: #5a2671;
+  border-left: 5px solid #ef476f;
+  background: #fdf0f5;
+  color: #a01a41;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(171,71,188,0.08);
+  box-shadow: 0 3px 12px rgba(239,71,111,0.07);
   position: relative;
 }
 .proposition-block .block-title::before {
   content: "Proposition " counter(proposition) ". ";
-  color: #ab47bc;
+  color: #ef476f;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .theorem-block {
   counter-increment: theorem;
-  border-left: 5px solid #d32f2f;
-  background: #ffebee;
-  color: #6a2323;
+  border-left: 5px solid #3a86ff;
+  background: #eaf1ff;
+  color: #20306a;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(211,47,47,0.08);
+  box-shadow: 0 3px 12px rgba(58,134,255,0.07);
   position: relative;
 }
 .theorem-block .block-title::before {
   content: "Theorem " counter(theorem) ". ";
-  color: #d32f2f;
+  color: #3a86ff;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .hint-block {
   counter-increment: hint;
-  border-left: 5px solid #00838f;
-  background: #e0f7fa;
-  color: #005662;
+  border-left: 5px solid #ffb627;
+  background: #fff8e1;
+  color: #85662e;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(0,131,143,0.08);
+  box-shadow: 0 3px 12px rgba(255,182,39,0.07);
   position: relative;
 }
 .hint-block .block-title::before {
   content: "Hint " counter(hint) ". ";
-  color: #00838f;
+  color: #ffb627;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .walkthrough-block {
   counter-increment: walkthrough;
-  border-left: 5px solid #3949ab;
-  background: #e8eaf6;
-  color: #232963;
+  border-left: 5px solid #118ab2;
+  background: #e6f6fa;
+  color: #1b4d5c;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(57,73,171,0.08);
+  box-shadow: 0 3px 12px rgba(17,138,178,0.07);
   position: relative;
 }
 .walkthrough-block .block-title::before {
   content: "Walkthrough " counter(walkthrough) ". ";
-  color: #3949ab;
+  color: #118ab2;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .proof-block {
   counter-increment: proof;
-  border-left: 5px solid #546e7a;
-  background: #eceff1;
-  color: #263238;
+  border-left: 5px solid #22223b;
+  background: #f1f1f3;
+  color: #22223b;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(84,110,122,0.08);
+  box-shadow: 0 3px 12px rgba(34,34,59,0.06);
   position: relative;
 }
 .proof-block .block-title::before {
   content: "Proof " counter(proof) ". ";
-  color: #546e7a;
+  color: #22223b;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .remark-block {
   counter-increment: remark;
-  border-left: 5px solid #ef6c00;
-  background: #fff3e0;
-  color: #814a11;
+  border-left: 5px solid #f94144;
+  background: #fff0f0;
+  color: #7c2323;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(239,108,0,0.08);
+  box-shadow: 0 3px 12px rgba(249,65,68,0.07);
   position: relative;
 }
 .remark-block .block-title::before {
   content: "Remark " counter(remark) ". ";
-  color: #ef6c00;
+  color: #f94144;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .problem-block {
   counter-increment: problem;
-  border-left: 5px solid #c62828;
-  background: #ffebee;
-  color: #6e1d1d;
+  border-left: 5px solid #ff7f51;
+  background: #fff4f0;
+  color: #8d3e23;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(198,40,40,0.08);
+  box-shadow: 0 3px 12px rgba(255,127,81,0.07);
   position: relative;
 }
 .problem-block .block-title::before {
   content: "Problem " counter(problem) ". ";
-  color: #c62828;
+  color: #ff7f51;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .solution-block {
   counter-increment: solution;
-  border-left: 5px solid #2e7d32;
-  background: #e8f5e9;
-  color: #174825;
+  border-left: 5px solid #4ecdc4;
+  background: #e7fcfa;
+  color: #1d746a;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(46,125,50,0.08);
+  box-shadow: 0 3px 12px rgba(78,205,196,0.07);
   position: relative;
 }
 .solution-block .block-title::before {
   content: "Solution " counter(solution) ". ";
-  color: #2e7d32;
+  color: #4ecdc4;
   font-weight: bold;
   font-size: 1.12em;
 }
 
 .exercise-block {
   counter-increment: exercise;
-  border-left: 5px solid #00897b;
-  background: #e0f2f1;
-  color: #1a4844;
+  border-left: 5px solid #763857;
+  background: #f5ebf1;
+  color: #3f2131;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(0,137,123,0.08);
+  box-shadow: 0 3px 12px rgba(118,56,87,0.07);
   position: relative;
 }
 .exercise-block .block-title::before {
   content: "Exercise " counter(exercise) ". ";
-  color: #00897b;
+  color: #763857;
   font-weight: bold;
   font-size: 1.12em;
 }
@@ -826,9 +825,12 @@
   text-decoration: none;
   font-size: 1em;
   opacity: 0.5;
-  transition: opacity 0.2s;
   margin-left: 0.5em;
+  transition: opacity 0.2s;
+  color: inherit;
 }
-.anchor-link:hover, .anchor-link:focus {
+.anchor-link:hover,
+.anchor-link:focus {
   opacity: 1;
+  color: #000;
 }

@@ -1,0 +1,253 @@
+.math-blocks {
+  counter-reset: definition example lemma claim proposition theorem hint walkthrough proof remark problem solution exercise;
+}
+
+/* Each block type has a distinct accent color and a coordinated light background.
+   Colors are chosen for clarity, elegance, and accessibility. */
+
+.definition-block {
+  counter-increment: definition;
+  border-left: 5px solid #1e88e5;
+  background: #e3f2fd;
+  color: #17426b;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(30,136,229,0.08);
+  position: relative;
+}
+.definition-block .block-title::before {
+  content: "Definition " counter(definition) ". ";
+  color: #1e88e5;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.example-block {
+  counter-increment: example;
+  border-left: 5px solid #43a047;
+  background: #e8f5e9;
+  color: #215732;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(67,160,71,0.08);
+  position: relative;
+}
+.example-block .block-title::before {
+  content: "Example " counter(example) ". ";
+  color: #43a047;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.lemma-block {
+  counter-increment: lemma;
+  border-left: 5px solid #6d4c41;
+  background: #efebe9;
+  color: #3e2723;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(109,76,65,0.08);
+  position: relative;
+}
+.lemma-block .block-title::before {
+  content: "Lemma " counter(lemma) ". ";
+  color: #6d4c41;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.claim-block {
+  counter-increment: claim;
+  border-left: 5px solid #fbc02d;
+  background: #fffde7;
+  color: #8d6e19;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(251,192,45,0.08);
+  position: relative;
+}
+.claim-block .block-title::before {
+  content: "Claim " counter(claim) ". ";
+  color: #fbc02d;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.proposition-block {
+  counter-increment: proposition;
+  border-left: 5px solid #ab47bc;
+  background: #f3e5f5;
+  color: #5a2671;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(171,71,188,0.08);
+  position: relative;
+}
+.proposition-block .block-title::before {
+  content: "Proposition " counter(proposition) ". ";
+  color: #ab47bc;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.theorem-block {
+  counter-increment: theorem;
+  border-left: 5px solid #d32f2f;
+  background: #ffebee;
+  color: #6a2323;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(211,47,47,0.08);
+  position: relative;
+}
+.theorem-block .block-title::before {
+  content: "Theorem " counter(theorem) ". ";
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.hint-block {
+  counter-increment: hint;
+  border-left: 5px solid #00838f;
+  background: #e0f7fa;
+  color: #005662;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(0,131,143,0.08);
+  position: relative;
+}
+.hint-block .block-title::before {
+  content: "Hint " counter(hint) ". ";
+  color: #00838f;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.walkthrough-block {
+  counter-increment: walkthrough;
+  border-left: 5px solid #3949ab;
+  background: #e8eaf6;
+  color: #232963;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(57,73,171,0.08);
+  position: relative;
+}
+.walkthrough-block .block-title::before {
+  content: "Walkthrough " counter(walkthrough) ". ";
+  color: #3949ab;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.proof-block {
+  counter-increment: proof;
+  border-left: 5px solid #546e7a;
+  background: #eceff1;
+  color: #263238;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(84,110,122,0.08);
+  position: relative;
+}
+.proof-block .block-title::before {
+  content: "Proof " counter(proof) ". ";
+  color: #546e7a;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.remark-block {
+  counter-increment: remark;
+  border-left: 5px solid #ef6c00;
+  background: #fff3e0;
+  color: #814a11;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(239,108,0,0.08);
+  position: relative;
+}
+.remark-block .block-title::before {
+  content: "Remark " counter(remark) ". ";
+  color: #ef6c00;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.problem-block {
+  counter-increment: problem;
+  border-left: 5px solid #c62828;
+  background: #ffebee;
+  color: #6e1d1d;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(198,40,40,0.08);
+  position: relative;
+}
+.problem-block .block-title::before {
+  content: "Problem " counter(problem) ". ";
+  color: #c62828;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.solution-block {
+  counter-increment: solution;
+  border-left: 5px solid #2e7d32;
+  background: #e8f5e9;
+  color: #174825;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(46,125,50,0.08);
+  position: relative;
+}
+.solution-block .block-title::before {
+  content: "Solution " counter(solution) ". ";
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+.exercise-block {
+  counter-increment: exercise;
+  border-left: 5px solid #00897b;
+  background: #e0f2f1;
+  color: #1a4844;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(0,137,123,0.08);
+  position: relative;
+}
+.exercise-block .block-title::before {
+  content: "Exercise " counter(exercise) ". ";
+  color: #00897b;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
+/* Anchor icon style */
+.anchor-link {
+  float: right;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  margin-left: 0.5em;
+}
+.anchor-link:hover, .anchor-link:focus {
+  opacity: 1;
+}
