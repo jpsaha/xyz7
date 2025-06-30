@@ -639,6 +639,23 @@
   font-size: 1.12em;
 }
 
+.claim-block {
+  counter-increment: claim;
+  border-left: 5px solid #ffe066;
+  background: #fffae6;
+  color: #6e591a;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(255,224,102,0.09);
+}
+.claim-block .block-title::before {
+  content: "Claim " counter(claim) ". ";
+  color: #bfa900;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
 .proposition-block {
   counter-increment: proposition;
   border-left: 5px solid #ffd6ba;
