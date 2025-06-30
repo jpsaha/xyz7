@@ -732,18 +732,18 @@
 
 .proof-block {
   counter-increment: proof;
-  border-left: 5px solid #22223b;
-  background: #f1f1f3;
-  color: #22223b;
+  border-left: 5px solid #2e7d32;
+  background: #e8f5e9;
+  color: #174825;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(34,34,59,0.06);
+  box-shadow: 0 3px 12px rgba(46,125,50,0.06);
   position: relative;
 }
 .proof-block .block-title::before {
   content: "Proof " counter(proof) ". ";
-  color: #22223b;
+  color: #2e7d32;
   font-weight: bold;
   font-size: 1.12em;
 }
@@ -804,18 +804,18 @@
 
 .exercise-block {
   counter-increment: exercise;
-  border-left: 5px solid #00897b;
-  background: #e0f2f1;
-  color: #1a4844;
+  border-left: 5px solid #22223b;
+  background: #f1f1f3;
+  color: #22223b;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(0,137,123,0.07);
+  box-shadow: 0 3px 12px rgba(34,34,59,0.07);
   position: relative;
 }
 .exercise-block .block-title::before {
   content: "Exercise " counter(exercise) ". ";
-  color: #00897b;
+  color: #22223b;
   font-weight: bold;
   font-size: 1.12em;
 }
