@@ -648,6 +648,7 @@
   margin: 1.5em 0;
   border-radius: 0.7em;
   box-shadow: 0 3px 12px rgba(255,224,102,0.09);
+  position: relative;
 }
 .claim-block .block-title::before {
   content: "Claim " counter(claim) ". ";
@@ -827,6 +828,7 @@
   margin: 1.5em 0;
   border-radius: 0.7em;
   box-shadow: 0 3px 12px rgba(246,194,139,0.09);
+  position: relative;
 }
 .exercise-block .block-title::before {
   content: "Exercise " counter(exercise) ". ";
@@ -878,9 +880,12 @@
   color: #5ab9ea;
 }
 
-.theorem-block:hover .anchor-link { color: #8860d0; }
+.definition-block:hover .anchor-link { color: #5ab9ea; }
+.example-block:hover .anchor-link { color: #a3d2ca; }
 .lemma-block:hover .anchor-link { color: #b088f9; }
+.claim-block:hover .anchor-link { color: #ffe066; }
 .proposition-block:hover .anchor-link { color: #ffd6ba; }
+.theorem-block:hover .anchor-link { color: #8860d0; }
 .corollary-block:hover .anchor-link { color: #f7b267; }
 .hint-block:hover .anchor-link { color: #b0efeb; }
 .walkthrough-block:hover .anchor-link { color: #f8c291; }
@@ -888,3 +893,4 @@
 .remark-block:hover .anchor-link { color: #ffe066; }
 .problem-block:hover .anchor-link { color: #ffb4a2; }
 .solution-block:hover .anchor-link { color: #a3c9a8; }
+.exercise-block:hover .anchor-link { color: #f6c28b; }
