@@ -659,18 +659,18 @@
 
 .proposition-block {
   counter-increment: proposition;
-  border-left: 5px solid #ef476f;
-  background: #fdf0f5;
-  color: #a01a41;
+  border-left: 5px solid #00897b;
+  background: #e0f2f1;
+  color: #1a4844;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(239,71,111,0.07);
+  box-shadow: 0 3px 12px rgba(0,137,123,0.07);
   position: relative;
 }
 .proposition-block .block-title::before {
   content: "Proposition " counter(proposition) ". ";
-  color: #ef476f;
+  color: #00897b;
   font-weight: bold;
   font-size: 1.12em;
 }
