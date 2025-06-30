@@ -641,18 +641,18 @@
 
 .claim-block {
   counter-increment: claim;
-  border-left: 5px solid #f6ae2d;
-  background: #fef7e3;
-  color: #8b6b17;
+  border-left: 5px solid #3a86ff;
+  background: #eaf1ff;
+  color: #20306a;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(246,174,45,0.07);
+  box-shadow: 0 3px 12px rgba(58,134,255,0.07);
   position: relative;
 }
 .claim-block .block-title::before {
   content: "Claim " counter(claim) ". ";
-  color: #f6ae2d;
+  color: #3a86ff;
   font-weight: bold;
   font-size: 1.12em;
 }
@@ -677,18 +677,18 @@
 
 .theorem-block {
   counter-increment: theorem;
-  border-left: 5px solid #3a86ff;
-  background: #eaf1ff;
-  color: #20306a;
+  border-left: 5px solid #3949ab;
+  background: #e8eaf6;
+  color: #232963;
   padding: 1em 1.5em;
   margin: 1.5em 0;
   border-radius: 0.7em;
-  box-shadow: 0 3px 12px rgba(58,134,255,0.07);
+  box-shadow: 0 3px 12px rgba(57,73,171,0.07);
   position: relative;
 }
 .theorem-block .block-title::before {
   content: "Theorem " counter(theorem) ". ";
-  color: #3a86ff;
+  color: #3949ab;
   font-weight: bold;
   font-size: 1.12em;
 }
