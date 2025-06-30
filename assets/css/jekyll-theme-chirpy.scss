@@ -748,6 +748,24 @@
   font-size: 1.12em;
 }
 
+.corollary-block {
+  counter-increment: corollary;
+  border-left: 5px solid #7897ab;
+  background: #f6fafd;
+  color: #25405b;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.7em;
+  box-shadow: 0 3px 12px rgba(120,151,171,0.06);
+  position: relative;
+}
+.corollary-block .block-title::before {
+  content: "Corollary " counter(corollary) ". ";
+  color: #456376;
+  font-weight: bold;
+  font-size: 1.12em;
+}
+
 .remark-block {
   counter-increment: remark;
   border-left: 5px solid #f94144;
